@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accentbackground"
+    tools:context=".Reservation.UserEditReservation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_white"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/adamina"
+                    android:text="@string/first_name"
+                    android:textColor="@color/text"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_black"
+                    android:fontFamily="@font/adamina"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"
+                    android:gravity="top|start"
+                    android:padding="10dp"
+                    android:hint="Input text..."
+                    android:inputType="text" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/adamina"
+                    android:text="@string/last_name"
+                    android:textColor="@color/text"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_black"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"
+                    android:gravity="top|start"
+                    android:padding="10dp"
+                    android:hint="Input text..."
+                    android:fontFamily="@font/adamina"
+                    android:inputType="text" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/adamina"
+                    android:text="@string/purok_number"
+                    android:textColor="@color/text"
+                    android:textSize="18sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_black">
+
+                    <Spinner
+                        android:id="@+id/purok_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/border_white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:text="@string/appointment_purpose"
+                    android:textColor="@color/text"
+                    android:textSize="18sp" />
+
+                <FrameLayout
+                    android:id="@+id/frameLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/border_black">
+
+                    <Spinner
+                        android:id="@+id/purpose_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/others"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/border_black"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/otherPurpose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:padding="10dp"
+                        android:hint="@string/other_purpose"
+                        android:background="@drawable/no_underline_edittext_background"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/text"
+                        android:textSize="16sp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_white"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:text="@string/preffered_date"
+                    android:textColor="@color/text"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <!--                    <FrameLayout-->
+                    <!--                        android:layout_width="0dp"-->
+                    <!--                        android:layout_weight="1"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginEnd="10dp"-->
+                    <!--                        android:layout_gravity="start|center"-->
+                    <!--                        android:background="@drawable/border_black">-->
+
+                    <!--                        <Spinner-->
+                    <!--                            android:id="@+id/monthSpinner"-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:padding="10dp"/>-->
+
+                    <!--                    </FrameLayout>-->
+
+                    <FrameLayout
+                        android:id="@+id/pickDate"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:background="@drawable/button_primary">
+
+                        <!--                        <Spinner-->
+                        <!--                            android:id="@+id/daySpinner"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:padding="10dp"/>-->
+
+                        <TextView
+                            android:id="@+id/picked"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pick Date"
+                            android:layout_gravity="center"
+                            android:textSize="20sp"
+                            android:padding="5dp"
+                            android:textColor="@color/white"/>
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/timeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/preffered_time"
+                        android:textColor="@color/text"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="18sp" />
+
+                    <FrameLayout
+                        android:id="@+id/frameLayout7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/border_black">
+
+                        <!--                <Spinner-->
+                        <!--                    android:id="@+id/timeSpinner"-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="65dp" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <RelativeLayout
+                                android:id="@+id/timeDisplay1"
+                                android:layout_width="320dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/border_black"
+                                android:padding="10dp"
+                                android:visibility="visible"
+                                android:layout_marginBottom="10dp">
+
+                                <TextView
+                                    android:id="@+id/time1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_9_00_am"
+                                    android:fontFamily="@font/adamina"
+                                    android:textColor="@color/text"
+                                    android:textSize="18sp"
+                                    android:layout_centerVertical="true"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true">
+
+                                    <TextView
+                                        android:id="@+id/limit1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/_0_20"
+                                        android:fontFamily="@font/adamina"
+                                        android:textColor="@color/text"
+                                        android:textSize="18sp"
+                                        android:layout_marginEnd="3dp"
+                                        android:gravity="center_vertical"
+                                        android:layout_marginStart="10dp"/>
+
+                                    <!--                                <ImageView-->
+                                    <!--                                    android:id="@+id/imageView"-->
+                                    <!--                                    android:layout_width="wrap_content"-->
+                                    <!--                                    android:layout_height="match_parent"-->
+                                    <!--                                    android:src="@drawable/profile_icon"-->
+                                    <!--                                    android:visibility="visible"-->
+                                    <!--                                    app:tint="@color/secondary" />-->
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="/20"
+                                        android:fontFamily="@font/adamina"
+                                        android:textColor="@color/text"
+                                        android:textSize="18sp"
+                                        android:layout_marginEnd="3dp"
+                                        android:gravity="center_vertical"
+                                        android:layout_marginStart="1dp"/>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/timeDisplay2"
+                                android:layout_width="320dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/border_black"
+                                android:padding="10dp"
+                                android:visibility="visible"
+                                android:layout_marginBottom="10dp">
+
+                                <TextView
+                                    android:id="@+id/time2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_10_00_am"
+                                    android:fontFamily="@font/adamina"
+                                    android:textColor="@color/text"
+                                    android:textSize="18sp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentStart="true"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true">
+
+                                    <TextView
+                                        android:id="@+id/limit2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/_0_20"
+                                        android:fontFamily="@font/adamina"
+                                        android:textColor="@color/text"
+                                        android:textSize="18sp"
+                                        android:layout_marginEnd="3dp"
+                                        android:layout_marginStart="10dp"/>
+
+                                    <!--                                <ImageView-->
+                                    <!--                                    android:id="@+id/imageView2"-->
+                                    <!--                                    android:layout_width="wrap_content"-->
+                                    <!--                                    android:layout_height="match_parent"-->
+                                    <!--                                    android:src="@drawable/profile_icon"-->
+                                    <!--                                    android:visibility="visible"-->
+                                    <!--                                    app:tint="@color/secondary" />-->
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="/20"
+                                        android:fontFamily="@font/adamina"
+                                        android:textColor="@color/text"
+                                        android:textSize="18sp"
+                                        android:layout_marginEnd="3dp"
+                                        android:gravity="center_vertical"
+                                        android:layout_marginStart="1dp"/>
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/timeDisplay3"
+                                android:layout_width="320dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/border_black"
+                                android:padding="10dp"
+                                android:visibility="visible"
+                                android:layout_marginBottom="10dp">
+
+                                <TextView
+                                    android:id="@+id/time3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_11_00_am"
+                                    android:fontFamily="@font/adamina"
+                                    android:textColor="@color/text"
+                                    android:layout_centerVertical="true"
+                                    android:textSize="18sp"
+                                    android:layout_alignParentStart="true"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true">
+
+                                    <TextView
+                                        android:id="@+id/limit3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/_0_20"
+                                        android:fontFamily="@font/adamina"
+                                        android:textColor="@color/text"
+                                        android:textSize="18sp"
+                                        android:layout_marginEnd="3dp"
+                                        android:gravity="center_vertical"
+                                        android:layout_marginStart="10dp"/>
+
+                                    <!--                                <ImageView-->
+                                    <!--                                    android:id="@+id/imageView3"-->
+                                    <!--                                    android:layout_width="wrap_content"-->
+                                    <!--                                    android:layout_height="match_parent"-->
+                                    <!--                                    android:src="@drawable/profile_icon"-->
+                                    <!--                                    android:visibility="visible"-->
+                                    <!--                                    app:tint="@color/secondary" />-->
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="/20"
+                                        android:fontFamily="@font/adamina"
+                                        android:textColor="@color/text"
+                                        android:textSize="18sp"
+                                        android:layout_marginEnd="3dp"
+                                        android:gravity="center_vertical"
+                                        android:layout_marginStart="1dp"/>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/timeDisplay4"
+                                android:layout_width="320dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/border_black"
+                                android:padding="10dp"
+                                android:visibility="visible"
+                                android:layout_marginBottom="10dp">
+
+                                <TextView
+                                    android:id="@+id/time4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_1_00_pm"
+                                    android:fontFamily="@font/adamina"
+                                    android:textColor="@color/text"
+                                    android:textSize="18sp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentStart="true"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true">
+
+                                    <TextView
+                                        android:id="@+id/limit4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/_0_20"
+                                        android:fontFamily="@font/adamina"
+                                        android:textColor="@color/text"
+                                        android:textSize="18sp"
+                                        android:layout_marginEnd="3dp"
+                                        android:gravity="center_vertical"
+                                        android:layout_marginStart="10dp"/>
+
+                                    <!--                                <ImageView-->
+                                    <!--                                    android:id="@+id/imageView4"-->
+                                    <!--                                    android:layout_width="wrap_content"-->
+                                    <!--                                    android:layout_height="match_parent"-->
+                                    <!--                                    android:src="@drawable/profile_icon"-->
+                                    <!--                                    android:visibility="visible"-->
+                                    <!--                                    app:tint="@color/secondary" />-->
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="/20"
+                                        android:fontFamily="@font/adamina"
+                                        android:textColor="@color/text"
+                                        android:textSize="18sp"
+                                        android:layout_marginEnd="3dp"
+                                        android:gravity="center_vertical"
+                                        android:layout_marginStart="1dp"/>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/timeDisplay5"
+                                android:layout_width="320dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/border_black"
+                                android:padding="10dp"
+                                android:visibility="visible"
+                                android:layout_marginBottom="10dp">
+
+                                <TextView
+                                    android:id="@+id/time5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_2_00_pm"
+                                    android:fontFamily="@font/adamina"
+                                    android:textColor="@color/text"
+                                    android:textSize="18sp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentStart="true"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true">
+
+                                    <TextView
+                                        android:id="@+id/limit5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/_0_20"
+                                        android:fontFamily="@font/adamina"
+                                        android:textColor="@color/text"
+                                        android:textSize="18sp"
+                                        android:layout_marginEnd="3dp"
+                                        android:gravity="center_vertical"
+                                        android:layout_marginStart="10dp"/>
+
+                                    <!--                                <ImageView-->
+                                    <!--                                    android:id="@+id/imageView5"-->
+                                    <!--                                    android:layout_width="wrap_content"-->
+                                    <!--                                    android:layout_height="match_parent"-->
+                                    <!--                                    android:src="@drawable/profile_icon"-->
+                                    <!--                                    android:visibility="visible"-->
+                                    <!--                                    app:tint="@color/secondary" />-->
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="/20"
+                                        android:fontFamily="@font/adamina"
+                                        android:textColor="@color/text"
+                                        android:textSize="18sp"
+                                        android:layout_marginEnd="3dp"
+                                        android:gravity="center_vertical"
+                                        android:layout_marginStart="1dp"/>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/timeDisplay6"
+                                android:layout_width="320dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/border_black"
+                                android:padding="10dp"
+                                android:visibility="visible"
+                                android:layout_marginBottom="10dp">
+
+                                <TextView
+                                    android:id="@+id/time6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_3_00_pm"
+                                    android:fontFamily="@font/adamina"
+                                    android:textColor="@color/text"
+                                    android:textSize="18sp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentStart="true"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true">
+
+                                    <TextView
+                                        android:id="@+id/limit6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/_0_20"
+                                        android:fontFamily="@font/adamina"
+                                        android:textColor="@color/text"
+                                        android:textSize="18sp"
+                                        android:layout_marginEnd="3dp"
+                                        android:gravity="center_vertical"
+                                        android:layout_marginStart="10dp"/>
+
+                                    <!--                                <ImageView-->
+                                    <!--                                    android:id="@+id/imageView6"-->
+                                    <!--                                    android:layout_width="wrap_content"-->
+                                    <!--                                    android:layout_height="match_parent"-->
+                                    <!--                                    android:src="@drawable/profile_icon"-->
+                                    <!--                                    android:visibility="visible"-->
+                                    <!--                                    app:tint="@color/secondary" />-->
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="/20"
+                                        android:fontFamily="@font/adamina"
+                                        android:textColor="@color/text"
+                                        android:textSize="18sp"
+                                        android:layout_marginEnd="3dp"
+                                        android:gravity="center_vertical"
+                                        android:layout_marginStart="1dp"/>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/timeDisplay7"
+                                android:layout_width="320dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/border_black"
+                                android:visibility="visible"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:id="@+id/time7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_4_00_pm"
+                                    android:fontFamily="@font/adamina"
+                                    android:textColor="@color/text"
+                                    android:textSize="18sp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentStart="true"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true">
+
+                                    <TextView
+                                        android:id="@+id/limit7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/_0_20"
+                                        android:fontFamily="@font/adamina"
+                                        android:textColor="@color/text"
+                                        android:textSize="18sp"
+                                        android:layout_marginEnd="3dp"
+                                        android:gravity="center_vertical"
+                                        android:layout_marginStart="10dp"/>
+
+                                    <!--                                <ImageView-->
+                                    <!--                                    android:id="@+id/imageView7"-->
+                                    <!--                                    android:layout_width="wrap_content"-->
+                                    <!--                                    android:layout_height="match_parent"-->
+                                    <!--                                    android:src="@drawable/profile_icon"-->
+                                    <!--                                    android:visibility="visible"-->
+                                    <!--                                    app:tint="@color/secondary" />-->
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="/20"
+                                        android:fontFamily="@font/adamina"
+                                        android:textColor="@color/text"
+                                        android:textSize="18sp"
+                                        android:layout_marginEnd="3dp"
+                                        android:gravity="center_vertical"
+                                        android:layout_marginStart="1dp"/>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/button"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_primary"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

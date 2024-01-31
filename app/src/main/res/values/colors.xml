@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nav">#0F9145</color>
+    <color name="green">#20633C</color>
+    <color name="bluish">#12301C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    
+
+    <color name="accept">#00A300</color>
+    <color name="reject">#FF0000</color>
+    <color name="primary">#D72E4C</color>
+    <color name="secondary">#F28699</color>
+    <color name="tertiary"> #F9CFD3</color>
+    <color name="accent">#F84968</color>
+    <color name="background">#F4EDEE</color>
+    <color name="accentbackground">#FCF5F6</color>
+    <color name="text">#0C0506</color>
+</resources>

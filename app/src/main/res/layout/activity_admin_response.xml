@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".adminResponse"
+    android:background="@color/accentbackground">
+
+    <TextView
+        android:id="@+id/response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/reason_of_rejection"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/barangayResponseEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_black"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:padding="10dp"
+        android:gravity="top|start"
+        android:lines="8"
+        android:hint="@string/input_response"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/submitResponseButton"
+        style="@style/button"
+        android:background="@drawable/button_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_response"
+        android:layout_gravity="center" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

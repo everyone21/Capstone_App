@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/border_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/textMonth"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:textSize="16sp"-->
+            <!--                android:text="Month"-->
+            <!--                android:textColor="@color/primary"-->
+            <!--                android:fontFamily="@font/adamina"-->
+            <!--                android:layout_alignParentStart="true"-->
+            <!--                android:layout_marginEnd="8dp"/>-->
+
+            <TextView
+                android:id="@+id/textDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/primary"
+                android:text="Date"
+                android:fontFamily="@font/adamina" />
+
+            <TextView
+                android:id="@+id/textTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/adamina"
+                android:textColor="@color/primary"
+                android:text="Time"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/textFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="FirstName"
+                android:textColor="@color/text"
+                android:fontFamily="@font/adamina"
+                android:layout_marginEnd="2dp"/>
+
+            <TextView
+                android:id="@+id/textLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:text="LastName"
+                android:textSize="16sp"
+                android:textColor="@color/text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textPurpose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Purpose"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/text"
+            android:fontFamily="@font/adamina"
+            android:layout_marginEnd="2dp"/>
+
+        <TextView
+            android:id="@+id/textPurok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:text="Purok"
+            android:fontFamily="@font/adamina"
+            android:textColor="@color/text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="end">
+            <TextView
+                android:id="@+id/editButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Edit"
+                android:textSize="14sp"
+                android:textColor="@color/accent"
+                android:fontFamily="@font/adamina"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Delete"
+                android:textSize="14sp"
+                android:textColor="@color/accent"
+                android:fontFamily="@font/adamina"
+                android:layout_marginEnd="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

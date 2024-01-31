@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calendarEditActivity"
+    android:orientation="vertical"
+    android:background="@color/accentbackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/adamina"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/what"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_black"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="top|start"
+                    android:hint="Input text..."
+                    android:lines="4"
+                    android:padding="10dp"
+                    android:textColor="@color/text"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border_white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:text="Location"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/where_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:lines="3"
+                    android:hint="Input text..."
+                    android:gravity="top|start"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/border_white">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/adamina"
+                        android:text="Date"
+                        android:textColor="@color/primary"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/when_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/text"
+                        android:padding="10dp"
+                        android:background="@drawable/border_black"
+                        android:hint="Input date..."
+                        android:lines="2"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/adamina"
+                        android:text="Time"
+                        android:textColor="@color/primary"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/text"
+                        android:textSize="16sp"
+                        android:lines="2"
+                        android:hint="Input time..."
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border_black"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/updt"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_primary"
+                android:fontFamily="@font/adamina"
+                android:layout_marginBottom="10dp"
+                android:text="@string/update" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accentbackground"
+    android:orientation="vertical"
+    tools:context=".User.UserReportFragment">
+
+        <TextView
+            android:id="@+id/topicTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topic"
+            android:textColor="@color/text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/topicReportInput"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_black"
+            android:inputType="text"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="#000000"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/descriptionReportInput"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:background="@drawable/border_black"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp"
+            android:lines="8"
+            android:gravity="top|start"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Media"
+            android:textColor="#000000"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:id="@+id/uploadMediaButton"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:background="@drawable/border_black"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:clickable="true"
+            android:layout_marginTop="5dp"
+            android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/uploadMediaImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/image_icon" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Anonymously"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:layout_margin="25dp"
+            android:checked="false"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_primary"
+            android:text="Submit"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "731239585263",
+    "firebase_url": "https://icomcon-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "icomcon",
+    "storage_bucket": "icomcon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731239585263:android:698895cf92faf814c8121a",
+        "android_client_info": {
+          "package_name": "com.example.capstone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmAoW-tC8yT5rTmUaGuftimM3PjfsvSnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731239585263:android:11d8e0411a2d0867c8121a",
+        "android_client_info": {
+          "package_name": "com.mycompany.capstone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmAoW-tC8yT5rTmUaGuftimM3PjfsvSnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
